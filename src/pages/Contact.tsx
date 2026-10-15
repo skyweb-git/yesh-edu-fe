@@ -86,12 +86,18 @@ export const Contact = () => {
                 
                 <div className="space-y-6 text-gray-600">
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 bg-red-50 text-[var(--color-primary)] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-red-50 text-[var(--color-primary)] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <MapPin className="w-5 h-5" />
                     </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-1">Office Address</h4>
-                      <p className="text-sm leading-relaxed">CF8R+JQ, Secunderabad,<br/>Telangana, India</p>
+                    <div className="space-y-3">
+                      <div>
+                        <h4 className="font-bold text-gray-900 mb-0.5 text-sm">Secunderabad Branch</h4>
+                        <p className="text-xs text-gray-600 leading-relaxed">CF8R+JQ, Secunderabad,<br/>Telangana, India</p>
+                      </div>
+                      <div className="pt-2 border-t border-gray-100">
+                        <h4 className="font-bold text-gray-900 mb-0.5 text-sm">Chilkanagar Branch</h4>
+                        <p className="text-xs text-gray-600 leading-relaxed">Road No. 2, MCDOWELLS COLONY, Boduppal,<br/>Hyderabad, Telangana 500039</p>
+                      </div>
                     </div>
                   </div>
 
@@ -252,37 +258,72 @@ export const Contact = () => {
               </form>
             </motion.div>
 
-            {/* Embedded Google Map */}
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 space-y-4">
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
-                    <MapPin className="w-5 h-5 text-[var(--color-primary)]" /> Our Location
-                  </h3>
-                  <p className="text-xs text-gray-500 mt-0.5">CF8R+JQ, Secunderabad, Telangana</p>
+            {/* Embedded Google Maps */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Secunderabad Branch */}
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col justify-between space-y-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-2">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-lg font-bold text-gray-900 flex items-center gap-2">
+                      <MapPin className="w-5 h-5 text-[var(--color-primary)] flex-shrink-0" /> Secunderabad Branch
+                    </h3>
+                    <p className="text-xs text-gray-500 mt-1">CF8R+JQ, Secunderabad, Telangana</p>
+                  </div>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=CF8R%2BJQ+Secunderabad,+Telangana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-red-50 text-[var(--color-primary)] hover:bg-red-100 rounded-xl text-xs font-bold transition-all border border-red-100 flex items-center gap-1 shrink-0 whitespace-nowrap self-start"
+                  >
+                    Open in Maps ↗
+                  </a>
                 </div>
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=CF8R%2BJQ+Secunderabad,+Telangana"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-red-50 text-[var(--color-primary)] hover:bg-red-100 rounded-xl text-xs font-bold transition-all border border-red-100 flex items-center gap-1.5"
-                >
-                  Open in Google Maps ↗
-                </a>
-              </div>
 
-              <div className="w-full h-80 rounded-xl overflow-hidden border border-gray-200 shadow-inner">
-                <iframe
-                  title="Secunderabad Location Map"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  loading="lazy"
-                  allowFullScreen
-                  src="https://maps.google.com/maps?q=CF8R%2BJQ+Secunderabad,+Telangana&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                ></iframe>
-              </div>
-            </motion.div>
+                <div className="w-full h-72 sm:h-80 rounded-xl overflow-hidden border border-gray-200 shadow-inner">
+                  <iframe
+                    title="Secunderabad Location Map"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    allowFullScreen
+                    src="https://maps.google.com/maps?q=CF8R%2BJQ+Secunderabad,+Telangana&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  ></iframe>
+                </div>
+              </motion.div>
+
+              {/* Chilkanagar Branch */}
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }} className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col justify-between space-y-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-2">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-lg font-bold text-gray-900 flex items-center gap-2">
+                      <MapPin className="w-5 h-5 text-[var(--color-primary)] flex-shrink-0" /> Chilkanagar Branch
+                    </h3>
+                    <p className="text-xs text-gray-500 mt-1 leading-snug">Road No. 2, MCDOWELLS COLONY, Boduppal, Hyderabad, Telangana 500039</p>
+                  </div>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Road+No.+2,+MCDOWELLS+COLONY,+Boduppal,+Hyderabad,+Telangana+500039"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1.5 bg-red-50 text-[var(--color-primary)] hover:bg-red-100 rounded-xl text-xs font-bold transition-all border border-red-100 flex items-center gap-1 shrink-0 whitespace-nowrap self-start"
+                  >
+                    Open in Maps ↗
+                  </a>
+                </div>
+
+                <div className="w-full h-72 sm:h-80 rounded-xl overflow-hidden border border-gray-200 shadow-inner">
+                  <iframe
+                    title="Chilkanagar Branch Map"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    allowFullScreen
+                    src="https://maps.google.com/maps?q=Road+No.+2,+MCDOWELLS+COLONY,+Boduppal,+Hyderabad,+Telangana+500039&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  ></iframe>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
