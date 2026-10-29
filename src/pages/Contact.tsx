@@ -94,13 +94,13 @@ export const Contact = () => {
                       <div>
                         <h4 className="font-bold text-gray-900 mb-0.5 text-sm">Secunderabad Branch</h4>
                         <p className="text-xs text-gray-600 leading-relaxed">
-                          1-4-879/86, Street No. 8, Gandhinagar, Bakaram, Kavadiguda, Secunderabad, Telangana 500080
+                          YashEduAcademy, 1-4-879/86, Street No. 8, Gandhinagar, Bakaram, Kavadiguda, Secunderabad, Hyderabad, Telangana 500080
                         </p>
                       </div>
                       <div className="pt-2 border-t border-gray-100">
                         <h4 className="font-bold text-gray-900 mb-0.5 text-sm">Chilkanagar Branch</h4>
                         <p className="text-xs text-gray-600 leading-relaxed">
-                          Road No. 2, MCDOWELLS COLONY, Boduppal, Hyderabad, Telangana 500039
+                          YashEduAcademy, Road No. 2, MCDOWELLS COLONY, Boduppal, Hyderabad, Telangana 500039
                         </p>
                       </div>
                     </div>
@@ -320,11 +320,11 @@ export const Contact = () => {
                         <span className="truncate">Secunderabad Branch</span>
                       </h3>
                       <p className="text-xs text-gray-500 mt-1 pl-5 sm:pl-7 leading-relaxed">
-                        CF8R+JQ, Secunderabad, Telangana
+                        YashEduAcademy, 1-4-879/86, Street No. 8, Gandhinagar, Bakaram, Kavadiguda, Secunderabad, Hyderabad, Telangana 500080
                       </p>
                     </div>
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=CF8R%2BJQ+Secunderabad,+Telangana"
+                      href="https://www.google.com/maps/search/?api=1&query=YashEduAcademy,+1-4-879%2F86,+Street+No.+8,+Gandhinagar,+Bakaram,+Kavadiguda,+Secunderabad,+Hyderabad,+Telangana+500080"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-2.5 py-1.5 sm:px-3 sm:py-1.5 bg-red-50 text-[var(--color-primary)] hover:bg-red-100 rounded-xl text-xs font-bold transition-all border border-red-100 flex items-center gap-1 shrink-0 whitespace-nowrap self-start"
@@ -341,7 +341,7 @@ export const Contact = () => {
                       style={{ border: 0 }}
                       loading="lazy"
                       allowFullScreen
-                      src="https://maps.google.com/maps?q=CF8R%2BJQ+Secunderabad,+Telangana&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                      src="https://maps.google.com/maps?q=YashEduAcademy,+1-4-879%2F86,+Street+No.+8,+Gandhinagar,+Bakaram,+Kavadiguda,+Secunderabad,+Hyderabad,+Telangana+500080&t=&z=16&ie=UTF8&iwloc=&output=embed"
                     ></iframe>
                   </div>
                 </motion.div>
@@ -362,11 +362,11 @@ export const Contact = () => {
                         <span className="truncate">Chilkanagar Branch</span>
                       </h3>
                       <p className="text-xs text-gray-500 mt-1 pl-5 sm:pl-7 leading-relaxed">
-                        YashEduAcademy, 1-4-879/86, Street No. 8, Gandhinagar, Bakaram, Kavadiguda, Secunderabad, Hyderabad, Telangana 500080
+                        YashEduAcademy, Road No. 2, MCDOWELLS COLONY, Boduppal, Hyderabad, Telangana 500039
                       </p>
                     </div>
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=YashEduAcademy,+1-4-879%2F86,+Street+No.+8,+Gandhinagar,+Bakaram,+Kavadiguda,+Secunderabad,+Hyderabad,+Telangana+500080"
+                      href="https://www.google.com/maps/search/?api=1&query=YashEduAcademy,+Road+No.+2,+MCDOWELLS+COLONY,+Boduppal,+Hyderabad,+Telangana+500039"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-2.5 py-1.5 sm:px-3 sm:py-1.5 bg-red-50 text-[var(--color-primary)] hover:bg-red-100 rounded-xl text-xs font-bold transition-all border border-red-100 flex items-center gap-1 shrink-0 whitespace-nowrap self-start"
@@ -383,7 +383,7 @@ export const Contact = () => {
                       style={{ border: 0 }}
                       loading="lazy"
                       allowFullScreen
-                      src="https://maps.google.com/maps?q=YashEduAcademy,+1-4-879%2F86,+Street+No.+8,+Gandhinagar,+Bakaram,+Kavadiguda,+Secunderabad,+Hyderabad,+Telangana+500080&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                      src="https://maps.google.com/maps?q=YashEduAcademy,+Road+No.+2,+MCDOWELLS+COLONY,+Boduppal,+Hyderabad,+Telangana+500039&t=&z=16&ie=UTF8&iwloc=&output=embed"
                     ></iframe>
                   </div>
                 </motion.div>
